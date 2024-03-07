@@ -1,0 +1,288 @@
+.intro-find-job-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    margin: 0;
+    padding: 0;
+    background: rgb(240,54,54);
+    background: radial-gradient(circle, rgba(240,54,54,1) 0%, rgba(91,21,21,1) 100%, rgba(0,0,0,1) 100%);
+    border-radius: 0 0 500px 500px;
+}
+
+.intro-find-job-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0;
+    flex-wrap: wrap;
+    z-index: 1;
+    border-radius: 0 0 500px 500px;
+}
+
+.intro-find-job-container .overlay .util-bar {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.intro-find-job-container .overlay .util-bar .account-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    flex-direction: row;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
+
+.intro-find-job-container .overlay .util-bar .util-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    flex-direction: row;
+}
+
+.intro-find-job-container .overlay .util-bar .util-btn-container .find-job-btn {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid #ffffff;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.intro-find-job-container .overlay .util-bar .util-btn-container .post-job-btn {
+    font-size: 14px;
+    font-weight: bold;
+    color: #af2727;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.intro-find-job-container .overlay .util-bar .util-btn-container .find-job-btn:hover,
+.intro-find-job-container .overlay .util-bar .util-btn-container .post-job-btn:hover {
+    transform: translate(0, -2px);
+    transition: 0.3s ease-in-out;
+}
+
+.intro-find-job-container .overlay h2 {
+    font-size: 70px;
+    margin: 50px 0 20px 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    white-space: wrap;
+    width: 60%;
+}
+
+.intro-find-job-container .overlay p {
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    white-space: wrap;
+    width: 60%;
+}
+
+.intro-find-job-container .overlay .search-container {
+    width: 50%;
+    height: auto;
+    margin: 50px 0 0 0;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: wrap;
+    background-color: rgba(50, 53, 70, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.intro-find-job-container .overlay .search-container form {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: wrap;
+    border: none;
+    box-shadow: 0 0 10px -2px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.intro-find-job-container .overlay .search-container form span {
+    width: 5%;
+    height: auto;
+    padding: 13px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(138, 126, 126, 0.5);
+}
+
+.intro-find-job-container .overlay .search-container form input {
+    width: 29%;
+    height: auto;
+    min-width: 120px;
+    margin: 0;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 10px 0 0 10px;
+}
+
+.intro-find-job-container .overlay .search-container form input::placeholder {
+    color: #ffffff;
+}
+
+.intro-find-job-container .overlay .search-container form select {
+    width: 29%;
+    height: auto;
+    min-width: 120px;
+    margin: 0;
+    padding: 10px 10px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid rgba(138, 126, 126, 0.5);
+    outline: none;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.intro-find-job-container .overlay .search-container form select option {
+    background-color: #1c1e26;
+    color: #ffffff;
+}
+
+.intro-find-job-container .overlay .search-container form button {
+    width: 8%;
+    height: auto;
+    margin: 0;
+    padding: 10.6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    border-left: 1px solid rgba(138, 126, 126, 0.5);
+}

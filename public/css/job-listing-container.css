@@ -1,0 +1,202 @@
+.job-listing-container {
+    width: 60%;
+    height: auto;
+    margin: 50px 0 50px 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+}
+
+.job-listing-container h3 {
+    color: var(--color);
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.job-listing-container .job-listing-card-container {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+    color: var(--color);
+    outline: 2px solid rgba(138, 126, 126, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card:hover {
+    outline: 2px solid #c22c2c;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card h6 {
+    font-size: 15px;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    background-color: #c22c2c;
+    color: #ffffff;
+    border-radius: 10px 0 10px 0;
+    padding: 5px 15px 5px 20px;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card h5 {
+    font-size: 18px;
+    margin: 15px 0 0 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    padding: 0 15px 0 15px;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card:hover h5 {
+    color: #c22c2c;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card h4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
+    color: var(--color);
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card h4 img {
+    width: 50px;
+    height: 50px;
+}
+
+.tooltip-email {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-email .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    top: 25%;
+    left: 100%;
+    background-color: var(--background-color);
+    color: var(--color);
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.1s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
+
+.tooltip-email:hover .tooltiptext {
+    visibility: visible;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card p {
+    font-size: 15px;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    padding: 0 15px 0 15px;
+    color: var(--color);
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card .type-tags {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 15px 0 15px;
+    margin: 0 0 15px 0;
+    width: 100%;
+    height: auto;
+}
+
+.job-listing-container .job-listing-card-container .job-listing-card .type-tags span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: var(--color);
+    background-color: rgba(138, 126, 126, 0.3);
+}

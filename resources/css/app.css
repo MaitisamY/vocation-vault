@@ -1,0 +1,17 @@
+.light-mode {
+    --background-color: #f5f8fa;
+    --color: #4a5568;
+}
+
+.dark-mode {
+    --background-color: #4a5568;
+    --color: #f5f8fa;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--background-color);
+    color: var(--color);
+}
