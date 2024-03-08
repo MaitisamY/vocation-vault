@@ -4,14 +4,14 @@
     <!-- Home page content here -->
 
     <!-- Account Popup -->
-    @include('partials.account-popup')
+    @include('components.account-popup')
     <!-- Account Popup -->
 
     <!-- Intro Find Job Container -->
     <div class="intro-find-job-container">
         <div class="overlay">
             <div class="util-bar">
-                <button type="button" class="account-btn">
+                <button type="button" class="account-btn" id="account-button">
                     <i class="fa-regular fa-user"></i> Account
                 </button>
 
@@ -80,7 +80,7 @@
                     <p>{{ str($job['description'])->limit(125) }}</p>
                     <h4 class="tooltip-email">
                         <img src="{{ asset('images/common-listing-image.png') }}" alt="{{ $job['title'] }}" />
-                        {{ $job['user'] }}, {{ $job['location'] }}
+                        {{ $job['user'] }}, <i>{{ $job['location'] }}</i>
                         <span class="tooltiptext">{{ $job['email'] }}</span>
                     </h4>
                     <div class="type-tags">

@@ -127,6 +127,11 @@
     height: 50px;
 }
 
+.job-listing-container .job-listing-card-container .job-listing-card h4 i {
+    font-size: 11px;
+    font-style: normal;
+}
+
 .tooltip-email {
     position: relative;
     display: inline-block;

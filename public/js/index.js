@@ -1,6 +1,6 @@
 // JavaScript function to toggle between light and dark modes
 document.getElementById('theme-mode-toggler').addEventListener('click', function() {
-    // Toggle the dark mode class on the body
+    
     document.body.classList.toggle('dark-mode');
 
     // Save theme preference to session storage
@@ -37,9 +37,31 @@ if (savedTheme === 'dark') {
     tooltip.classList.add('tooltip-left');
 }
 
-const handleAccountPopup = () => {
+
+// Add event listener for account button to toggle account popup
+document.getElementById('account-button').addEventListener('click', () => {
     const accountPopup = document.querySelector('.account-popup');
     accountPopup.classList.toggle('show');
-}
 
-document.querySelector('.account-btn').addEventListener('click', handleAccountPopup);
+    if (accountPopup.classList.contains('show')) {
+        accountPopup.style.animation = 'slideDown 0.3s ease-in-out forwards';
+    } else {
+        accountPopup.style.animation = 'slideUp 0.3s ease-in-out forwards';
+    }
+});
+
+// Add event listener for close button
+document.querySelector('.close-btn').addEventListener('click', () => {
+    const accountPopup = document.querySelector('.account-popup');
+    accountPopup.classList.remove('show');
+});
+
+// Add event listener for outside click
+document.querySelector('.account-popup').addEventListener('click', (event) => {
+    if (event.target === document.querySelector('.account-popup')) {
+        const accountPopup = document.querySelector('.account-popup');
+        accountPopup.classList.remove('show');
+    }
+});
+
+

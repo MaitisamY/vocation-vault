@@ -29,6 +29,8 @@ Route::get('/categories', [AppController::class, 'categories'])->name('categorie
 
 Route::get('/listings', [AppController::class, 'listings'])->name('listings');
 
+Route::get('/privacy-policy', [AppController::class, 'privacy_policy'])->name('privacy-policy');
+
 // CategoryController (Specific route with name parameter)
 Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('category.show');
 

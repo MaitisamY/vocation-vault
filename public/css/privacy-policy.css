@@ -1,0 +1,98 @@
+.privacy-policy-container {
+    width: 60%;
+    height: auto;
+    margin: 50px 0 50px 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0;
+    flex-wrap: wrap;
+    color: var(--color);
+}
+
+.privacy-policy-container h2 {
+    font-size: 30px;
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
+
+.privacy-policy-container h3 {
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
+
+.privacy-policy-container h4 {
+    margin: 20px 0 5px 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    margin: 0;
+}
+
+.privacy-policy-container h6 {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    background-color: rgba(138, 126, 126, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 0 5px 0;
+}
+
+.privacy-policy-container p {
+    color: var(--color);
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
+
+.privacy-policy-container ul {
+    margin: 0 0 20px 50px;
+    padding: 0;
+}
+
+.privacy-policy-container ul li {
+    color: var(--color);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
