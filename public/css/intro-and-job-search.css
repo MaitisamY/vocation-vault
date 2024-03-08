@@ -7,7 +7,7 @@
     padding: 0;
     background: rgb(240,54,54);
     background: radial-gradient(circle, rgba(240,54,54,1) 0%, rgba(91,21,21,1) 100%, rgba(0,0,0,1) 100%);
-    border-radius: 0 0 500px 500px;
+    border-radius: 0;
 }
 
 .intro-find-job-container .overlay {
@@ -26,7 +26,7 @@
     gap: 0;
     flex-wrap: wrap;
     z-index: 1;
-    border-radius: 0 0 500px 500px;
+    border-radius: 0;
 }
 
 .intro-find-job-container .overlay .util-bar {

@@ -56,7 +56,7 @@
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
-    background-color: var(--background-color);
+    background-color: transparent;
     color: var(--color);
     outline: 2px solid rgba(138, 126, 126, 0.5);
     border-radius: 10px;
@@ -65,7 +65,7 @@
 }
 
 .job-listing-container .job-listing-card-container .job-listing-card:hover {
-    outline: 2px solid #c22c2c;
+    transform: translate(0, -2px);
 }
 
 .job-listing-container .job-listing-card-container .job-listing-card h6 {
@@ -86,7 +86,7 @@
 
 .job-listing-container .job-listing-card-container .job-listing-card h5 {
     font-size: 18px;
-    margin: 15px 0 0 0;
+    margin: 0;
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -94,11 +94,13 @@
     font-optical-sizing: auto;
     letter-spacing: normal;
     word-spacing: 2px;
-    padding: 0 15px 0 15px;
+    padding: 5px 15px 10px 15px;
+    width: 100%;
+    border-bottom: 2px solid rgba(138, 126, 126, 0.5);
 }
 
 .job-listing-container .job-listing-card-container .job-listing-card:hover h5 {
-    color: #c22c2c;
+    color: #e43535;
 }
 
 .job-listing-container .job-listing-card-container .job-listing-card h4 {
@@ -198,5 +200,7 @@
     padding: 5px 10px;
     border-radius: 25px;
     color: var(--color);
-    background-color: rgba(138, 126, 126, 0.3);
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.3);
+    outline: 1px solid rgba(138, 126, 126, 0.5);
 }

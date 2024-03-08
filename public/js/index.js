@@ -23,13 +23,23 @@ document.getElementById('theme-mode-toggler').addEventListener('click', function
 // Apply saved theme preference on page load
 const savedTheme = sessionStorage.getItem('theme');
 if (savedTheme === 'dark') {
+
     document.body.classList.add('dark-mode');
+
     // Apply saved theme preference to icon
     const icon = document.getElementById('theme-icon');
     icon.classList.add('fa-toggle-on');
+
     // Update tooltip text and position
     const tooltip = document.querySelector('.tooltiptext');
     tooltip.textContent = 'Toggle Light Mode';
     tooltip.classList.remove('tooltip-right');
     tooltip.classList.add('tooltip-left');
 }
+
+const handleAccountPopup = () => {
+    const accountPopup = document.querySelector('.account-popup');
+    accountPopup.classList.toggle('show');
+}
+
+document.querySelector('.account-btn').addEventListener('click', handleAccountPopup);

@@ -2,6 +2,11 @@
 
 @section('content')
     <!-- Home page content here -->
+
+    <!-- Account Popup -->
+    @include('partials.account-popup')
+    <!-- Account Popup -->
+
     <!-- Intro Find Job Container -->
     <div class="intro-find-job-container">
         <div class="overlay">
@@ -74,7 +79,7 @@
                     <h5>{{ $job['title'] }}</h5>
                     <p>{{ str($job['description'])->limit(125) }}</p>
                     <h4 class="tooltip-email">
-                        <img src="{{ asset('images/' . $job['image']) }}" alt="{{ $job['title'] }}" /> 
+                        <img src="{{ asset('images/common-listing-image.png') }}" alt="{{ $job['title'] }}" />
                         {{ $job['user'] }}, {{ $job['location'] }}
                         <span class="tooltiptext">{{ $job['email'] }}</span>
                     </h4>

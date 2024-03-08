@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class AppController extends Controller
 {
-    
+
     public $categories;
     public $listings;
     public $appFooter;
@@ -26,38 +26,35 @@ class AppController extends Controller
         ];
 
         $this->listings = [
-            [ 
-                'id'=> 1, 
-                'title'=> 'Web Developer With 3+ Years of Experience is Needed.', 
-                'description'=> 'VolarSoft immediately needs and expert web developer with over 3 years of experience. They are seeking an experienced web developer to join the team.', 
+            [
+                'id'=> 1,
+                'title'=> 'Web Developer With 3+ Years of Experience is Needed.',
+                'description'=> 'VolarSoft immediately needs and expert web developer with over 3 years of experience. We are seeking an experienced web developer to join the team.',
                 'category' => 'IT & Networking',
-                'user'=> 'VolarSoft', 
+                'user'=> 'VolarSoft',
                 'email'=> 'volarsoft@example.com',
                 'location'=> 'USA',
-                'type'=> ['Full Time', 'Part Time'],
-                'image'=> 'common-listing-image.png'
+                'type'=> ['Full Time', 'Part Time']
             ],
-            [ 
-                'id'=> 2, 
-                'title'=> 'Marketing Manager Required', 
-                'description'=> 'Vanza Solutions needs a marketing manager to help drive sales. They are seeking an experienced marketing manager to join the team.', 
+            [
+                'id'=> 2,
+                'title'=> 'Marketing Manager Required',
+                'description'=> 'Vanza Solutions needs a marketing manager to help drive sales. We are seeking an experienced marketing manager to join the team.',
                 'category' => 'Marketing',
                 'user'=> 'Vanza Solutions',
                 'email'=> 'vanzasolutions@example.com',
                 'location'=> 'UK',
-                'type'=> ['Hybrid','Remote'],
-                'image'=> 'common-listing-image.png'
+                'type'=> ['Hybrid','Remote']
             ],
             [
                 'id'=> 3,
                 'title'=> 'Sales Representative Required',
-                'description' => 'Urban Tech needs a sales representative to help drive sales. They are seeking an experienced sales representative to join the team.',
+                'description' => 'Urban Tech needs a sales representative to help drive sales. We are seeking an experienced sales representative to join the team.',
                 'category' => 'Sales',
                 'user'=> 'Urban Tech',
                 'email'=> 'urban.tech@example.com',
                 'location'=> 'Malaysia',
-                'type'=> ['Remote'],
-                'image'=> 'common-listing-image.png'
+                'type'=> ['Remote']
             ]
         ];
     }
