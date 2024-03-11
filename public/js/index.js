@@ -1,6 +1,6 @@
 // JavaScript function to toggle between light and dark modes
 document.getElementById('theme-mode-toggler').addEventListener('click', function() {
-    
+
     document.body.classList.toggle('dark-mode');
 
     // Save theme preference to session storage
@@ -38,29 +38,95 @@ if (savedTheme === 'dark') {
 }
 
 
-// Add event listener for account button to toggle account popup
-document.getElementById('account-button').addEventListener('click', () => {
+// Function to toggle account popup visibility
+function toggleAccountPopup() {
     const accountPopup = document.querySelector('.account-popup');
-    accountPopup.classList.toggle('show');
+    const isOpen = accountPopup.classList.contains('show');
 
-    if (accountPopup.classList.contains('show')) {
+    if (!isOpen) {
         accountPopup.style.animation = 'slideDown 0.3s ease-in-out forwards';
+        accountPopup.classList.add('show');
     } else {
         accountPopup.style.animation = 'slideUp 0.3s ease-in-out forwards';
+        setTimeout(() => {
+            accountPopup.classList.remove('show');
+        }, 300); // Adjust the timeout to match the animation duration
     }
-});
+}
+
+// Add event listener for account button to toggle account popup
+document.getElementById('account-button').addEventListener('click', toggleAccountPopup);
 
 // Add event listener for close button
 document.querySelector('.close-btn').addEventListener('click', () => {
     const accountPopup = document.querySelector('.account-popup');
-    accountPopup.classList.remove('show');
+    accountPopup.style.animation = 'slideUp 0.3s ease-in-out forwards';
+    setTimeout(() => {
+        accountPopup.classList.remove('show');
+    }, 300); // Adjust the timeout to match the animation duration
 });
 
 // Add event listener for outside click
 document.querySelector('.account-popup').addEventListener('click', (event) => {
     if (event.target === document.querySelector('.account-popup')) {
         const accountPopup = document.querySelector('.account-popup');
-        accountPopup.classList.remove('show');
+        accountPopup.style.animation = 'slideUp 0.3s ease-in-out forwards';
+        setTimeout(() => {
+            accountPopup.classList.remove('show');
+        }, 300); // Adjust the timeout to match the animation duration
+    }
+});
+
+
+// Content switching between login and signup
+const loginButton = document.querySelector('#login-selector');
+const signupButton = document.querySelector('#signup-selector');
+const loginContainer = document.querySelector('#login-container');
+const signupContainer = document.querySelector('#signup-container');
+
+loginButton.addEventListener('click', () => {
+    loginContainer.style.display = 'flex';
+    signupContainer.classList.remove('show');
+    loginButton.classList.add('active');
+    signupButton.classList.remove('active');
+});
+
+signupButton.addEventListener('click', () => {
+    loginContainer.style.display = 'none';
+    signupContainer.classList.add('show');
+    loginButton.classList.remove('active');
+    signupButton.classList.add('active');
+});
+
+
+// Password show/hide toggle for login
+const togglePassword = document.querySelector('#toggle-login-password');
+const password = document.querySelector('#login-password');
+togglePassword.addEventListener('click', function () {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    if (type === 'password') {
+        togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    } else {
+        togglePassword.innerHTML = '<i class="fas fa-eye"></i>';
+    }
+});
+
+
+// Password show/hide toggle for signup
+const togglePasswordSignup = document.querySelector('#toggle-signup-password');
+const passwordSignup = document.querySelector('#signup-password');
+togglePasswordSignup.addEventListener('click', function () {
+    // toggle the type attribute
+    const type = passwordSignup.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordSignup.setAttribute('type', type);
+    // toggle the eye slash icon
+    if (type === 'password') {
+        togglePasswordSignup.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    } else {
+        togglePasswordSignup.innerHTML = '<i class="fas fa-eye"></i>';
     }
 });
 

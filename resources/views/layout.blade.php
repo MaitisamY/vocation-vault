@@ -24,7 +24,7 @@
         <link rel="canonical" href="{{ url('/') }}">
         <link href="{{ asset('css/index.css') }}" rel="stylesheet">
         <link href="{{ asset('css/category.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/intro-and-job-search.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/intro.css') }}" rel="stylesheet">
         <link href="{{ asset('css/job-listing-container.css') }}" rel="stylesheet">
         <link href="{{ asset('css/account-popup.css') }}" rel="stylesheet">
         <link href="{{ asset('css/privacy-policy.css') }}" rel="stylesheet">

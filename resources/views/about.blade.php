@@ -2,5 +2,18 @@
 
 @section('content')
     <!-- About page content here -->
-    <h1>ABOUT PAGE</h1>
+
+    <!-- Account Popup -->
+    @include('components.account-popup')
+    <!-- Account Popup -->
+
+    <!-- Intro Container -->
+    <div class="intro-container">
+        <div class="overlay">
+            @include('components.util-bar')
+
+            <h3>About</h3>
+        </div>
+    </div>
+    <!-- Intro Container -->
 @endsection

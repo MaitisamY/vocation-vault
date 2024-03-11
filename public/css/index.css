@@ -252,13 +252,11 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: rgba(255, 72, 72, 0.9);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 header ul li a.active {
-    /* color: rgba(235, 60, 60, 1); */
-    color: #ffffff;
-    background: rgb(240,54,54);
+    color: rgba(255, 72, 72, 0.9);
 }
 
 header ul .dropdown-container-menu {
@@ -355,6 +353,7 @@ header .toggle-btn {
 }
 
 .theme-mode-toggler i {
+    font-size: 25px;
     transition: all 0.3s ease;
 }
 

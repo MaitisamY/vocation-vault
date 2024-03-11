@@ -7,23 +7,10 @@
     @include('components.account-popup')
     <!-- Account Popup -->
 
-    <!-- Intro Find Job Container -->
-    <div class="intro-find-job-container">
+    <!-- Intro Container -->
+    <div class="intro-container home">
         <div class="overlay">
-            <div class="util-bar">
-                <button type="button" class="account-btn" id="account-button">
-                    <i class="fa-regular fa-user"></i> Account
-                </button>
-
-                <div class="util-btn-container">
-                    <a href="#" class="find-job-btn">
-                        <i class="fa-solid fa-search"></i> Find Jobs
-                    </a>
-                    <a href="#" class="post-job-btn">
-                        <i class="fa-solid fa-plus"></i> Post a Job
-                    </a>
-                </div>
-            </div>
+            @include('components.util-bar')
 
             <h2>Innovative Job Board: Post and Find Niche Opportunities</h2>
             <p>
@@ -53,7 +40,7 @@
             </div>
         </div>
     </div>
-    <!-- Intro Find Job Container -->
+    <!-- Intro Container -->
 
     <!-- Category Container -->
     <div class="category-container">
